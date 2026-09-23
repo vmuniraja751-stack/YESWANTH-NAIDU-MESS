@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeswanth Naidu Mess | Authentic Rayalaseema Flavors</title>
+  <style>
+    :root {
+      --bg: #fbfbfb;
+      --card-bg: #ffffff;
+      --text-main: #1a1a1a;
+      --text-muted: #555555;
+      --swiggy: #fc8019;
+      --zomato: #e23744;
+      --maps: #107c41;
+      --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      padding: 20px 16px;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .header {
+      margin-bottom: 24px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #900c3f;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-align: center;
+      color: var(--text-main);
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 8px;
+    }
+
+    .menu-list {
+      list-style: none;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px dashed #eee;
+      font-size: 14px;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      font-weight: 600;
+    }
+
+    .item-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .section-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin: 16px 0 10px 0;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 12px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.1s ease;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-swiggy {
+      background-color: var(--swiggy);
+    }
+
+    .btn-zomato {
+      background-color: var(--zomato);
+    }
+
+    .walkin-box {
+      background: #fff8e7;
+      border: 1.5px dashed #f5b041;
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-top: 20px;
+    }
+
+    .walkin-text {
+      font-size: 13px;
+      font-weight: 600;
+      color: #7d6608;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .btn-maps {
+      background-color: var(--maps);
+      margin-bottom: 0;
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER -->
+    <div class="header">
+      <h1 class="title">Yeswanth Naidu Mess</h1>
+      <p class="tagline">We are always pleased to serve you our best quality food, made with authentic Rayalaseema spices and zero compromises!</p>
+    </div>
+
+    <!-- MENU PREVIEW CARD -->
+    <div class="card">
+      <div class="card-title">🍲 Popular Special Combos</div>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <div>
+            <div class="item-name">Ragi Sangati + Chicken Curry</div>
+            <div class="item-desc">Traditional millet balls served with spicy curry</div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div>
+            <div class="item-name">White Rice + Nellore Fish Curry</div>
+            <div class="item-desc">Steamed masoori rice with tangy chepala pulusu</div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div>
+            <div class="item-name">Special Egg Fry / Omelette</div>
+            <div class="item-desc">Double-egg spicy side dish</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ONLINE ORDER BUTTONS -->
+    <p class="section-label">Order online directly via:</p>
+
+    <!-- REPLACE WITH YOUR ACTUAL SWIGGY STORE URL -->
+    <a href="https://www.swiggy.com/restaurants/YOUR_RESTAURANT_ID" class="btn btn-swiggy" target="_blank">
+      Order on Swiggy
+    </a>
+
+    <!-- REPLACE WITH YOUR ACTUAL ZOMATO STORE URL -->
+    <a href="https://www.zomato.com/tirupati/YOUR_RESTAURANT_ID" class="btn btn-zomato" target="_blank">
+      Order on Zomato
+    </a>
+
+    <!-- DIRECT WALKIN DISCOUNT SECTION -->
+    <div class="walkin-box">
+      <p class="walkin-text">
+        ✨ Want lower prices & extra savings? Visit us directly at our counter for special direct prices & daily discounts!
+      </p>
+
+      <!-- REPLACE WITH YOUR GOOGLE MAPS PIN URL -->
+      <a href="https://maps.google.com/?q=YOUR_RESTAURANT_LOCATION" class="btn btn-maps" target="_blank">
+        📍 Get Directions to Restaurant
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      Thank You! 🙏
+    </div>
+
+  </div>
+
+</body>
+</html>
